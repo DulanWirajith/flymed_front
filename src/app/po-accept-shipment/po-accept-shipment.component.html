@@ -1,0 +1,456 @@
+<aside class="aside aside-fixed">
+  <app-podashbord></app-podashbord>
+</aside>
+
+<div class="content ht-100v pd-0">
+  <div class="content-header">
+    <div class="content-search">
+      <i data-feather="search"></i>
+      <input type="search" class="form-control" placeholder="Search...">
+    </div>
+    <nav class="nav">
+      <a href="#" class="nav-link"><i data-feather="help-circle"></i></a>
+      <a href="#" class="nav-link"><i data-feather="grid"></i></a>
+      <a href="#" class="nav-link"><i data-feather="align-left"></i></a>
+    </nav>
+  </div>
+
+  <div class="content-body">
+    <div class="container pd-x-0">
+      <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+
+      </div>
+
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">From Supplires</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">From other Post Office</a>
+        </li>
+
+      </ul>
+      <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+          <div class="row row-xs ">
+
+
+
+            <div class="col-sm-6 col-lg-12" style="margin-top: 2px;">
+              <h4>Outstanding Pick List<span>&nbsp;<i class="fa fa-question-circle" aria-hidden="true" data-toggle="tooltip" title="Shipments in these pick lists need to be updated as received.."></i></span></h4>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">List</th>
+                    <th scope="col">List Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>List 1</td>
+                    <td>14 April 2020 at 02.34 pm</td>
+                  </tr>
+                  <tr>
+                    <td>List 2</td>
+                    <td>14 April 2020 at 02.34 pm</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <br />
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Recevied</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Changing ID</th>
+                    <th scope="col">Supplier</th>
+                    <th scope="col">Patient Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Remarks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td>tr0001</td>
+                    <td>tr0005</td>
+                    <td>Southern Pharmacy</td>
+                    <td>Somadada</td>
+                    <td>Wakwalla Rd, Galle</td>
+                    <td>550</td>
+                    <td>------</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td>tr0001</td>
+                    <td>tr0005</td>
+                    <td>Southern Pharmacy</td>
+                    <td>Somadada</td>
+                    <td>Wakwalla Rd, Galle</td>
+                    <td>550</td>
+                    <td>------</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+              <br />
+              <h5>Shipment Retained by Supplier</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Track ID</th>
+                    <th scope="col">Changing ID</th>
+                    <th scope="col">Supplier</th>
+                    <th scope="col">Patient Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>tr0001</td>
+                    <td>tr0005</td>
+                    <td>Southern Pharmacy</td>
+                    <td>Somadada</td>
+                    <td>Wakwalla Rd, Galle</td>
+                    <td>550</td>
+                    <td>------</td>
+                  </tr>
+                  <tr>
+                    <td>tr0001</td>
+                    <td>tr0005</td>
+                    <td>Southern Pharmacy</td>
+                    <td>Somadada</td>
+                    <td>Wakwalla Rd, Galle</td>
+                    <td>550</td>
+                    <td>------</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br />
+              <div class="d-none d-md-block">
+                <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="mail" class="wd-10 mg-r-5"></i> Save</button>
+                <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="printer" class="wd-10 mg-r-5"></i> Print</button>
+                <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Export</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second tab -->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="newList-tab" data-toggle="tab" href="#newList" role="tab" aria-controls="newList" aria-selected="true">Select Shipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="olderList-tab" data-toggle="tab" href="#olderList" role="tab" aria-controls="olderList" aria-selected="false">Accept Selected</a>
+            </li>
+          </ul>
+          <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
+            <div class="tab-pane fade show active" id="newList" role="tabpanel" aria-labelledby="newList-tab">
+              <div class="row row-xs">
+
+                <!-- post office -->
+                <div class="col-md-6 card" style="margin-top: 2px;">
+                  <br>
+                  <div class="row" style="margin-top: 2px;">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-3">
+                      <div class="avatar avatar-xxl "><img src="../../assets/images/sl post office.png" class="rounded-circle" alt=""></div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="row">
+                        <h5 class="mg-b-2 tx-spacing--1">Baddegama PO</h5>
+                      </div>
+                      <div class="row">
+                        <h4 class="mg-b-2 tx-spacing--1 "> <small>80200</small> </h4>
+                      </div>
+                      <div class="row" style="margin-top:10px">
+                        <h5 class="col tx-teal">
+                          <small><span data-toggle="tooltip" title="" data-placement="right" data-original-title="Contact Post Office"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
+                                <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                              </svg></span></small>
+
+                        </h5>
+                        <h5 class="col tx-teal ">
+                          <small>
+                            <span data-toggle="tooltip" title="" data-placement="right" data-original-title="Message Post Office"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                              </svg></span>
+                          </small>
+                        </h5>
+                      </div>
+
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table table-dashboard mg-b-0">
+                        <thead>
+                          <tr>
+                            <th>Dispatch Schedule</th>
+                            <th>Incharge Officer</th>
+                            <th class="text-left">Vehicle Number</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200415-GL-01
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Namal</td>
+                            <td class="tx-medium text-left">58-5623</td>
+
+                          </tr>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200415-GL-02
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Namal</td>
+                            <td class="tx-medium text-left">60-5623</td>
+
+                          </tr>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200416-GL-01
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Sunil</td>
+                            <td class="tx-medium text-left">58-5623</td>
+
+                          </tr>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200416-GL-02
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Kamal</td>
+                            <td class="tx-medium text-left">58-5623</td>
+
+                          </tr>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200416-GL-03
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Sunil</td>
+                            <td class="tx-medium text-left">58-5623</td>
+
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-1 ">
+
+                    </div>
+                    <div class="col-md-6">
+                      <p class="tx-color-03 mg-b-0">Showing 1 - 5 of 10 </p>
+                    </div>
+                    <div class="cpl-md-4">
+                      <div class="d-flex mg-t-20 mg-sm-t-0">
+                        <div class="btn-group flex-fill">
+                          <button class="btn btn-white btn-xs active">Previous</button>
+                          <button class="btn btn-white btn-xs">Next</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+
+                </div>
+
+
+                <!-- post office -->
+                <div class="col-md-6 card" style="margin-top: 2px;">
+                  <br>
+                  <div class="row" style="margin-top: 2px;">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-3">
+                      <div class="avatar avatar-xxl"><img src="../../assets/images/sl post office.png" class="rounded-circle" alt=""></div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="row">
+                        <h5 class="mg-b-2 tx-spacing--1">Unawatuna PO</h5>
+                      </div>
+                      <div class="row">
+                        <h4 class="mg-b-2 tx-spacing--1 "> <small>80200</small> </h4>
+                      </div>
+                      <div class="row" style="margin-top:10px">
+                        <h5 class="col tx-teal">
+                          <small><span data-toggle="tooltip" title="" data-placement="right" data-original-title="Contact Post Office"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone-call">
+                                <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                              </svg></span></small>
+
+                        </h5>
+                        <h5 class="col tx-teal ">
+                          <small>
+                            <span data-toggle="tooltip" title="" data-placement="right" data-original-title="Message Post Office"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                              </svg></span>
+                          </small>
+                        </h5>
+                      </div>
+
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <table class="table table-dashboard mg-b-0">
+                        <thead>
+                          <tr>
+                            <th>Dispatch Schedule</th>
+                            <th>Incharge Officer</th>
+                            <th class="text-left">Vehicle Number</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200415-GL-01
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Namal</td>
+                            <td class="tx-medium text-left">58-5623</td>
+
+                          </tr>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200415-GL-02
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Namal</td>
+                            <td class="tx-medium text-left">60-5623</td>
+
+                          </tr>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200416-GL-01
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Sunil</td>
+                            <td class="tx-medium text-left">58-5623</td>
+
+                          </tr>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200416-GL-02
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Kamal</td>
+                            <td class="tx-medium text-left">58-5623</td>
+
+                          </tr>
+                          <tr>
+                            <td class="tx-color-03 tx-normal tx-center">
+                              IPODL-20200416-GL-03
+                            </td>
+                            <td class="tx-color-03 tx-normal">Mr.Sunil</td>
+                            <td class="tx-medium text-left">58-5623</td>
+
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-1 ">
+
+                    </div>
+                    <div class="col-md-6">
+                      <p class="tx-color-03 mg-b-0">Showing 1 - 5 of 10 </p>
+                    </div>
+                    <div class="cpl-md-4">
+                      <div class="d-flex mg-t-20 mg-sm-t-0">
+                        <div class="btn-group flex-fill">
+                          <button class="btn btn-white btn-xs active">Previous</button>
+                          <button class="btn btn-white btn-xs">Next</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="olderList" role="tabpanel" aria-labelledby="olderList-tab">
+              <div class="row">
+                <div class="col-sm-6 col-lg-6" style="margin-top: 2px;">
+                  <h5>Shipments Received from <span style="color: slategrey;text-decoration: underline;">Unawatuna Post Office</span></h5>
+                </div>
+                <div class="col-sm-6 col-lg-6" style="margin-top: 2px;">
+                  <h5>Total Shipments <span style="color: red;text-decoration: underline;">25</span></h5>
+                </div>
+              </div>
+              <table id="example" class="table table-striped table-bordered mydatatable" style="width:100%">
+                <thead>
+                  <tr>
+                    <th>Received</th>
+                    <th>Track ID</th>
+                    <th>Change in ID</th>
+                    <th>Supplier</th>
+                    <th>Patient</th>
+                    <th>Address</th>
+                    <th>Amount</th>
+                    <th>Remarks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td> ABC 001 <a href=""><i class="fa fa-times" aria-hidden="true" style="color: red;"></i></a> </td>
+                    <td>DEF 001</td>
+                    <td>Southers pharmacy</td>
+                    <td>Somadasa</td>
+                    <td>Karapitiya Rd, Galle</td>
+                    <td>550</td>
+                    <td>-----</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr></tr>
+                </tfoot>
+              </table>
+              <div class="row">
+                <div class="col-md-7 ">
+                  <div class="d-none d-md-block">
+                    <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="mail" class="wd-10 mg-r-5"></i> Save</button>
+                    <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="printer" class="wd-10 mg-r-5"></i> Print</button>
+                    <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Generate Report</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <p class="tx-color-03 mg-b-0">Showing 1 - 6 of 10 </p>
+                </div>
+                <div class="cpl-md-2">
+                  <div class="d-flex mg-t-20 mg-sm-t-0">
+                    <div class="btn-group flex-fill">
+                      <button class="btn btn-white btn-xs active">Previous</button>
+                      <button class="btn btn-white btn-xs">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>

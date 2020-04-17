@@ -1,0 +1,265 @@
+<aside class="aside aside-fixed">
+    <app-podashbord></app-podashbord>
+</aside>
+
+<div class="content ht-100v pd-0">
+    <div class="content-header">
+        <div class="content-search">
+            <i data-feather="search"></i>
+            <input type="search" class="form-control" placeholder="Search...">
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav-link"><i data-feather="help-circle"></i></a>
+            <a href="#" class="nav-link"><i data-feather="grid"></i></a>
+            <a href="#" class="nav-link"><i data-feather="align-left"></i></a>
+        </nav>
+    </div>
+    <!-- content-header -->
+
+    <div class="content-body">
+        <div class="container pd-x-0">
+            <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+                <div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Post Office</li>
+                        </ol>
+                    </nav>
+                    <h4 class="mg-b-0 tx-spacing--1">Welcome to Dashboard</h4>
+                </div>
+                <!-- <div class="d-none d-md-block">
+                    <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="mail" class="wd-10 mg-r-5"></i> Email</button>
+                    <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="printer" class="wd-10 mg-r-5"></i> Print</button>
+                    <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Generate Report</button>
+                </div> -->
+            </div>
+
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Awaiting Pick-ups</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pickup List</a>
+                </li>
+
+            </ul>
+            <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="row row-xs ">
+                        <!-- pharmacies -->
+                        <div class="col-sm-6 col-lg-6" style="margin-top: 2px;">
+                            <div class="card" style="text-align: center;
+                                margin-left: auto;
+                                margin-right: auto;
+                                text-align: center;
+                                display: table-cell;
+                                vertical-align: middle;">
+                                <img src="../../assets/images/Wing-It-Logo-BW.png" class="card-img-top" style="width: 100px; height: 100px;margin-top: 5px;" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title">Pharmacy</h6>
+                                    <p class="card-text">Address</p>
+                                    <button class="btn btn-link">Call <i class="fa fa-phone"></i></button>
+                                    <button class="btn btn-link">Msg <i class="fa fa-envelope"></i></button>
+                                    <p class="card-text" style="color: red;">Awaiting orders<label>&nbsp;&nbsp;5</label></p>
+
+                                    <table id="example" class="table table-striped table-bordered mydatatable" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Track ID</th>
+                                                <th>Delievery Area</th>
+                                                <th>Remarks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkBox"></td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr></tr>
+                                        </tfoot>
+                                    </table>
+                                    <button class="btn btn-dark">Select All</button>
+                                    <button class="btn btn-dark" style="margin-left: 5px;">Add pick list </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- phamacies -->
+                        <div class="col-sm-6 col-lg-6" style="margin-top: 2px;">
+                            <div class="card" style="text-align: center;
+                                margin-left: auto;
+                                margin-right: auto;
+                                text-align: center;
+                                display: table-cell;
+                                vertical-align: middle;">
+                                <img src="../../assets/images/Wing-It-Logo-BW.png" class="card-img-top" style="width: 100px; height: 100px;margin-top: 5px;" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title">Pharmacy</h6>
+                                    <p class="card-text">Address</p>
+                                    <button class="btn btn-link">Call <i class="fa fa-phone"></i></button>
+                                    <button class="btn btn-link">Msg <i class="fa fa-envelope"></i></button>
+                                    <p class="card-text" style="color: red;">Awaiting orders<label>&nbsp;&nbsp;5</label></p>
+
+                                    <table id="example" class="table table-striped table-bordered mydatatable" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Track ID</th>
+                                                <th>Delievery Area</th>
+                                                <th>Remarks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkBox"></td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr></tr>
+                                        </tfoot>
+                                    </table>
+                                    <button class="btn btn-dark">Select All</button>
+                                    <button class="btn btn-dark" style="margin-left: 5px;">Add pick list </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pharmacies -->
+                        <div class="col-sm-6 col-lg-6" style="margin-top: 2px;">
+                            <div class="card" style="text-align: center;
+                                margin-left: auto;
+                                margin-right: auto;
+                                text-align: center;
+                                display: table-cell;
+                                vertical-align: middle;">
+                                <img src="../../assets/images/Wing-It-Logo-BW.png" class="card-img-top" style="width: 100px; height: 100px;margin-top: 5px;" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title">Pharmacy</h6>
+                                    <p class="card-text">Address</p>
+                                    <button class="btn btn-link">Call <i class="fa fa-phone"></i></button>
+                                    <button class="btn btn-link">Msg <i class="fa fa-envelope"></i></button>
+                                    <p class="card-text" style="color: red;">Awaiting orders<label>&nbsp;&nbsp;5</label></p>
+
+                                    <table id="example" class="table table-striped table-bordered mydatatable" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Track ID</th>
+                                                <th>Delievery Area</th>
+                                                <th>Remarks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkBox"></td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr></tr>
+                                        </tfoot>
+                                    </table>
+                                    <button class="btn btn-dark">Select All</button>
+                                    <button class="btn btn-dark" style="margin-left: 5px;">Add pick list </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                    <!-- <h6>Profile</h6>
+                    <p>...</p> -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="newList-tab" data-toggle="tab" href="#newList" role="tab" aria-controls="newList" aria-selected="true">New Pick List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="olderList-tab" data-toggle="tab" href="#olderList" role="tab" aria-controls="olderList" aria-selected="false">Older Pick List</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
+                        <div class="tab-pane fade show active" id="newList" role="tabpanel" aria-labelledby="newList-tab">
+                            <h6>Street : <span>&nbsp;street name</span></h6>
+                            <table id="example" class="table table-striped table-bordered mydatatable" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Supplier</th>
+                                        <th>ID</th>
+                                        <th>changed ID</th>
+                                        <th>Patient Name</th>
+                                        <th>Address</th>
+                                        <th>Amount</th>
+                                        <th>Remarks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>asd</td>
+                                        <td> Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>61</td>
+                                        <td>61</td>
+                                        <td>61</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr></tr>
+                                </tfoot>
+                            </table>
+                            <div class="d-none d-md-block">
+                                <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="mail" class="wd-10 mg-r-5"></i> Save</button>
+                                <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="printer" class="wd-10 mg-r-5"></i> Print</button>
+                                <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Generate Report</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="olderList" role="tabpanel" aria-labelledby="olderList-tab">
+                            <table id="example" class="table table-striped table-bordered mydatatable" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Created Date</th>
+                                        <th>Created Time</th>
+                                        <th>Pick List</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>asd</td>
+                                        <td> Architect</td>
+                                        <td>Edinburgh</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr></tr>
+                                </tfoot>
+                            </table>
+                            <div class="d-none d-md-block">
+                                <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="mail" class="wd-10 mg-r-5"></i> View</button>
+                                <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="printer" class="wd-10 mg-r-5"></i> Print</button>
+                                <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Generate Report</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

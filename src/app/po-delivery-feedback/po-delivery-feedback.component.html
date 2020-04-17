@@ -1,0 +1,969 @@
+<aside class="aside aside-fixed">
+  <app-podashbord></app-podashbord>
+</aside>
+
+<div class="content ht-100v pd-0">
+  <div class="content-header">
+    <div class="content-search">
+      <i data-feather="search"></i>
+      <input type="search" class="form-control" placeholder="Search...">
+    </div>
+    <nav class="nav">
+      <a href="#" class="nav-link"><i data-feather="help-circle"></i></a>
+      <a href="#" class="nav-link"><i data-feather="grid"></i></a>
+      <a href="#" class="nav-link"><i data-feather="align-left"></i></a>
+    </nav>
+  </div>
+  <!-- content-header -->
+
+  <div class="content-body">
+    <div class="container pd-x-0">
+      <div class="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
+        <div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-style1 mg-b-10">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Delievery Feedack</li>
+            </ol>
+          </nav>
+          <!-- <h4 class="mg-b-0 tx-spacing--1">Welcome to Dashboard</h4> -->
+        </div>
+        <!-- <div class="d-none d-md-block">
+                    <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="mail" class="wd-10 mg-r-5"></i> Email</button>
+                    <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><i data-feather="printer" class="wd-10 mg-r-5"></i> Print</button>
+                    <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="file" class="wd-10 mg-r-5"></i> Generate Report</button>
+                </div> -->
+      </div>
+
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Customer Deliveries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Inter Post Office Deliveries</a>
+        </li>
+
+      </ul>
+      <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent" style="padding-left: 5px;padding-right: 5px;">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-3">
+              <li class="media align-items-center ">
+                <div class="wd-40 ht-40 bg-indigo tx-white d-flex align-items-center justify-content-center rounded">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="media-body pd-l-15">
+                  <h5 class="mg-b-2"><a href="#" class="link-01">Select Date & List</a></h5>
+                </div>
+              </li>
+            </div>
+
+            <div class="col-md-3 ">
+              <input type="date" class="mg-t-5" style="width:100%; height:80%" />
+            </div>
+
+            <div class="col-md-4">
+              <select class="form-control" id="sel1" style="
+              width: 85%;
+              ">
+                <option>FDDL-20200415-GL-01</option>
+                <option>FDDL-20200415-GL-02</option>
+                <option>FDDL-20200415-GL-03</option>
+                <option>FDDL-20200415-GL-04</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+
+            <div class="col-lg-12 col-xl-12 mg-t-12">
+              <div class="card mg-b-10" style="padding-left: 5px;padding-right: 5px;">
+                <div class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 pd-b-0" style="padding-left: 5px;padding-right: 5px;">
+                  <div>
+                    <h5 class="mg-b-5">FDDL-20200415-GL-01</h5>
+                    <p class="tx-13 tx-color-03 mg-b-0">Your Final Deliveries in 2020/04/15 First Shedule</p>
+                  </div>
+                  <div class="d-flex mg-t-20 mg-sm-t-0">
+
+                    <div class="d-none d-md-block" style="padding-left: 5px;padding-right: 5px; ">
+
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-mail wd-10 mg-r-5">
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                          <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg> Email</button>
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-printer wd-10 mg-r-5">
+                          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                          <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg> Print</button>
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-file wd-10 mg-r-5">
+                          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                          <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg> Generate Report</button>
+                      <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-save wd-10 mg-r-5">
+                          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                          <polyline points="7 3 7 8 15 8"></polyline>
+                        </svg> Save</button></div>
+                  </div>
+                </div><!-- card-header -->
+                <div class="card-body pd-y-30" style="padding-left: 5px;padding-right: 5px;">
+                  <div class="d-sm-flex">
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-teal tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Total Shipments</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">20</h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-pink tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Success Shipment</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">15<small> / 20</small></h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-primary tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Fail Shipments</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">5<small> / 20</small></h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-teal tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Total Collected</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">LKR 4500</h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-teal tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Post Office Earnings</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">LKR 1500</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- card-body -->
+                <div class="table-responsive">
+                  <table class="table table-dashboard mg-b-0">
+                    <thead>
+                      <tr>
+                        <th>Track ID</th>
+                        <th class="text-right">Change in Teack ID</th>
+                        <th class="text-right">Amount</th>
+                        <th class="text-right">Collected Amount</th>
+                        <th class="text-right">Delivery Failed</th>
+                        <th class="text-center">Reason</th>
+                        <th class="text-center">Next Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tx-color-03 tx-normal">GL-000008</td>
+                        <td class="tx-medium text-right"></td>
+                        <td class="text-right tx-teal">200</td>
+                        <td class="text-right tx-pink"><input type="text" class="" placeholder="200" style="
+    width: 84px;
+"></td>
+                        <td class="tx-medium text-center"><input type="checkbox" value=""></td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Address Incorect</option>
+                            <option>Wrong Content</option>
+                            <option>Customer Unavailable</option>
+                            <option>Customer didn't Pay</option>
+                          </select>
+
+                        </td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Reschedule a Delivery</option>
+                            <option>Return to Supplier</option>
+
+
+                          </select>
+
+                        </td>
+                      </tr>
+
+
+
+
+                      <tr>
+                        <td class="tx-color-03 tx-normal">GL-000009</td>
+                        <td class="tx-color-03 tx-normal">GL-000009-BD
+                        </td>
+                        <td class="text-right tx-teal">500</td>
+                        <td class="text-right tx-pink"><input type="text" class="" placeholder="500" style="
+    width: 84px;
+"></td>
+                        <td class="tx-medium text-center"><input type="checkbox" value=""></td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Address Incorect</option>
+                            <option>Wrong Content</option>
+                            <option>Customer Unavailable</option>
+                            <option>Customer didn't Pay</option>
+                          </select>
+
+                        </td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Reschedule a Delivery</option>
+                            <option>Return to Supplier</option>
+
+
+                          </select>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal">GL-000011</td>
+                        <td class="tx-medium text-right"></td>
+                        <td class="text-right tx-teal">600</td>
+                        <td class="text-right tx-pink"><input type="text" class="" placeholder="600" style="
+    width: 84px;
+"></td>
+                        <td class="tx-medium text-center"><input type="checkbox" value=""></td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Address Incorect</option>
+                            <option>Wrong Content</option>
+                            <option>Customer Unavailable</option>
+                            <option>Customer didn't Pay</option>
+                          </select>
+
+                        </td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Reschedule a Delivery</option>
+                            <option>Return to Supplier</option>
+
+
+                          </select>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal">GL-000012</td>
+                        <td class="tx-color-03 tx-normal">
+                        </td>
+                        <td class="text-right tx-teal">500</td>
+                        <td class="text-right tx-pink"><input type="text" class="" placeholder="500" style="
+    width: 84px;
+"></td>
+                        <td class="tx-medium text-center"><input type="checkbox" value=""></td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Address Incorect</option>
+                            <option>Wrong Content</option>
+                            <option>Customer Unavailable</option>
+                            <option>Customer didn't Pay</option>
+                          </select>
+
+                        </td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Reschedule a Delivery</option>
+                            <option>Return to Supplier</option>
+
+
+                          </select>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal">GL-000018</td>
+                        <td class="tx-color-03 tx-normal">
+                        </td>
+                        <td class="text-right tx-teal">1300</td>
+                        <td class="text-right tx-pink"><input type="text" class="" placeholder="1300" style="
+    width: 84px;
+"></td>
+                        <td class="tx-medium text-center"><input type="checkbox" value=""></td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Address Incorect</option>
+                            <option>Wrong Content</option>
+                            <option>Customer Unavailable</option>
+                            <option>Customer didn't Pay</option>
+                          </select>
+
+                        </td>
+                        <td class="text-right tx-pink">
+                          <select class="form-control" id="sel1" style="
+    width: 85%;
+">
+                            <option>Reschedule a Delivery</option>
+                            <option>Return to Supplier</option>
+
+
+                          </select>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- table-responsive -->
+
+
+
+              </div><!-- card -->
+
+
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+
+
+
+
+          <div class="row">
+
+            <div class="col-lg-12 col-xl-12 mg-t-12">
+              <div class="card mg-b-10" style="padding-left: 5px;padding-right: 5px;">
+                <div class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 pd-b-0" style="padding-left: 5px;padding-right: 5px;">
+                  <div>
+                    <h5 class="mg-b-5">Success Delivery Log</h5>
+                    <p class="tx-13 tx-color-03 mg-b-0">Success Delivery Log of 2020/04/15</p>
+                  </div>
+                  <div class="d-flex mg-t-20 mg-sm-t-0">
+
+                    <div class="d-none d-md-block" style="padding-left: 5px;padding-right: 5px; ">
+
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-mail wd-10 mg-r-5">
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                          <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg> Email</button>
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-printer wd-10 mg-r-5">
+                          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                          <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg> Print</button>
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-file wd-10 mg-r-5">
+                          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                          <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg> Generate Report</button>
+                      <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-save wd-10 mg-r-5">
+                          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                          <polyline points="7 3 7 8 15 8"></polyline>
+                        </svg> Save</button></div>
+                  </div>
+                </div>
+
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h6 class="mg-b-0">Customize Reports</h6>
+                      <ul class="list-inline d-flex mg-b-0">
+                        <li class="list-inline-item d-flex align-items-center">
+                          <input type="checkbox" value="" class="tx-12" style=""> Dispatch Date & Time
+                          <!-- <span class="d-block wd-10 ht-10 bg-df-2 rounded mg-r-5"><input type="checkbox" value=""></span> -->
+                          <!-- <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Today</span> -->
+                        </li>
+                        <li class="list-inline-item d-flex align-items-center mg-l-10">
+                          <input type="checkbox" value="" class="tx-12" style=""> Contact Num
+                        </li>
+                        <li class="list-inline-item d-flex align-items-center">
+                          <input type="checkbox" value="" class="tx-12" style=""> Remarks by Supplier
+                        </li>
+                        <li class="list-inline-item d-flex align-items-center mg-l-10">
+                          <input type="checkbox" value="" class="tx-12" style=""> Remarks by Post Office
+                        </li>
+                        <li class="list-inline-item d-flex align-items-center">
+                          <input type="checkbox" value="" class="tx-12" style=""> Received from Post Office
+                          <!-- <span class="d-block wd-10 ht-10 bg-df-2 rounded mg-r-5"></span> -->
+                          <!-- <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Today</span> -->
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+
+                <div class="card-body pd-y-30" style="padding-left: 5px;padding-right: 5px;">
+                  <div class="d-sm-flex">
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-teal tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Total Success Shipments</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">150</h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-pink tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Total Amount Collected</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">LKR 45000</h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-primary tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Total Post Office Earnings</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">LKR 15000</h4>
+                      </div>
+                    </div>
+
+                  </div>
+                </div><!-- card-body -->
+                <div class="table-responsive">
+                  <table class="table table-dashboard mg-b-0">
+                    <thead>
+                      <tr>
+                        <th>Track ID</th>
+                        <th class="text-center">Change in Teack ID</th>
+                        <th class="text-center">Dispatch Note</th>
+                        <th class="text-center">Supplier</th>
+                        <th class="text-center">Amount</th>
+                        <th class="text-center">Delivery Completed On</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tx-color-03 tx-normal tx-indigo">GL-000008</td>
+                        <td class="tx-medium text-center tx-indigo"></td>
+                        <td class="tx-medium text-center tx-indigo">FDDL-20200415-GL-01</td>
+                        <td class="text-left tx-indigo">SPC-Galle</td>
+                        <td class="text-center tx-indigo">200</td>
+                        <td class="text-center tx-success">2020/04/15 3.20PM </td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal tx-indigo">GL-000009</td>
+                        <td class="tx-medium text-center tx-indigo">GL-000009-BD</td>
+                        <td class="tx-medium text-center tx-indigo">FDDL-20200415-GL-01</td>
+                        <td class="text-left tx-indigo">Devon Pharmacy</td>
+                        <td class="text-center tx-indigo">500</td>
+                        <td class="text-center tx-success">2020/04/15 3.20PM </td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal tx-indigo">GL-000011</td>
+                        <td class="tx-medium text-center tx-indigo"></td>
+                        <td class="tx-medium text-center tx-indigo">FDDL-20200415-GL-02</td>
+                        <td class="text-left tx-indigo">co-op hospital</td>
+                        <td class="text-center tx-indigo">600</td>
+                        <td class="text-center tx-success">2020/04/15 3.20PM </td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal tx-indigo">GL-000018</td>
+                        <td class="tx-medium text-center tx-indigo"></td>
+                        <td class="tx-medium text-center tx-indigo">FDDL-20200415-GL-03</td>
+                        <td class="text-left tx-indigo">SPC-Galle</td>
+                        <td class="text-center tx-indigo">1300</td>
+                        <td class="text-center tx-success">2020/04/15 3.20PM </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div><!-- table-responsive -->
+
+
+
+              </div><!-- card -->
+
+
+            </div>
+          </div>
+
+
+          <br>
+          <br>
+          <br>
+
+          <div class="row">
+
+            <div class="col-lg-12 col-xl-12 mg-t-12">
+              <div class="card mg-b-10" style="padding-left: 5px;padding-right: 5px;">
+                <div class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 pd-b-0" style="padding-left: 5px;padding-right: 5px;">
+                  <div>
+                    <h5 class="mg-b-5">Fail Delivery Log</h5>
+                    <p class="tx-13 tx-color-03 mg-b-0">Fail Delivery Log of 2020/04/15</p>
+                  </div>
+                  <div class="d-flex mg-t-20 mg-sm-t-0">
+
+                    <div class="d-none d-md-block" style="padding-left: 5px;padding-right: 5px; ">
+
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-mail wd-10 mg-r-5">
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                          <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg> Email</button>
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-printer wd-10 mg-r-5">
+                          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                          <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg> Print</button>
+                      <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-file wd-10 mg-r-5">
+                          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                          <polyline points="13 2 13 9 20 9"></polyline>
+                        </svg> Generate Report</button>
+                      <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-save wd-10 mg-r-5">
+                          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                          <polyline points="7 3 7 8 15 8"></polyline>
+                        </svg> Save</button></div>
+                  </div>
+                </div>
+
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h6 class="mg-b-0">Customize Reports</h6>
+                      <ul class="list-inline d-flex mg-b-0">
+                        <li class="list-inline-item d-flex align-items-center">
+                          <input type="checkbox" value="" class="tx-12" style=""> Patient Details
+                          <!-- <span class="d-block wd-10 ht-10 bg-df-2 rounded mg-r-5"><input type="checkbox" value=""></span> -->
+                          <!-- <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Today</span> -->
+                        </li>
+                        <li class="list-inline-item d-flex align-items-center mg-l-10">
+                          <input type="checkbox" value="" class="tx-12" style=""> Supplier
+                        </li>
+                        <li class="list-inline-item d-flex align-items-center">
+                          <input type="checkbox" value="" class="tx-12" style=""> Remarks by Supplier
+                        </li>
+                        <li class="list-inline-item d-flex align-items-center mg-l-10">
+                          <input type="checkbox" value="" class="tx-12" style=""> Remarks by Post Office
+                        </li>
+                        <li class="list-inline-item d-flex align-items-center">
+                          <input type="checkbox" value="" class="tx-12" style=""> Received from Post Office
+                          <!-- <span class="d-block wd-10 ht-10 bg-df-2 rounded mg-r-5"></span> -->
+                          <!-- <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Today</span> -->
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+
+                <div class="card-body pd-y-30" style="padding-left: 5px;padding-right: 5px;">
+                  <div class="d-sm-flex">
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-teal tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Total Failed Shipments</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">20</h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-pink tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Shipment Failed Reasons</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">05</h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-primary tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Shipments Returned</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">3 / <small>20</small></h4>
+                      </div>
+                    </div>
+                    <div class="media col">
+                      <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-teal tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                          <line x1="18" y1="20" x2="18" y2="10"></line>
+                          <line x1="12" y1="20" x2="12" y2="4"></line>
+                          <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                      </div>
+                      <div class="media-body">
+                        <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Shipments Rescheduled</h6>
+                        <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">17 / <small>20</small></h4>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- card-body -->
+                <div class="table-responsive">
+                  <table class="table table-dashboard mg-b-0">
+                    <thead>
+                      <tr>
+                        <th>Track ID</th>
+                        <th class="text-center">Change in Teack ID</th>
+                        <th class="text-center">Dispatch Note</th>
+                        <th class="text-center">Fail Reason</th>
+                        <th class="text-center">Next Action</th>
+                        <th class="text-center">Delivery Failed On</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tx-color-03 tx-normal tx-indigo">GL-000010</td>
+                        <td class="tx-medium text-center tx-indigo"></td>
+                        <td class="tx-medium text-center tx-indigo">FDDL-20200415-GL-01</td>
+                        <td class="text-left tx-indigo">Address Incorrect</td>
+                        <td class="text-left tx-indigo">Reschedule a Delivery</td>
+                        <td class="text-center tx-danger">2020/04/15 3.20PM </td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal tx-indigo">GL-000013</td>
+                        <td class="tx-medium text-center tx-indigo">GL-000013-BD</td>
+                        <td class="tx-medium text-center tx-indigo">FDDL-20200415-GL-01</td>
+                        <td class="text-left tx-indigo">Customer didn't Pay</td>
+                        <td class="text-left tx-indigo">Return to Supplier</td>
+                        <td class="text-center tx-danger">2020/04/15 3.20PM </td>
+                      </tr>
+                      <tr>
+                        <td class="tx-color-03 tx-normal tx-indigo">GL-000019</td>
+                        <td class="tx-medium text-center tx-indigo"></td>
+                        <td class="tx-medium text-center tx-indigo">FDDL-20200415-GL-02</td>
+                        <td class="text-left tx-indigo">Wrong Contet</td>
+                        <td class="text-left tx-indigo">Reschedule a Delivery</td>
+                        <td class="text-center tx-danger">2020/04/15 3.20PM </td>
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div><!-- table-responsive -->
+
+
+
+              </div><!-- card -->
+
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+          <div class="row">
+            <div class="col-md-3">
+              <li class="media align-items-center ">
+                <div class="wd-40 ht-40 bg-indigo tx-white d-flex align-items-center justify-content-center rounded">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="media-body pd-l-15">
+                  <h5 class="mg-b-2"><a href="#" class="link-01">Select Date & List</a></h5>
+                </div>
+              </li>
+            </div>
+
+            <div class="col-md-3 ">
+              <input type="date" class="mg-t-5" style="width:100%; height:80%" />
+            </div>
+
+            <div class="col-md-3">
+              <select class="form-control" id="sel1" style="
+              width: 85%;
+              ">
+                <option>ALL</option>
+                <option>FDDL-20200415-GL-01</option>
+                <option>FDDL-20200415-GL-02</option>
+                <option>FDDL-20200415-GL-03</option>
+                <option>FDDL-20200415-GL-04</option>
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <select class="form-control" id="sel1" style="
+              width: 85%;
+              ">
+                <option>ALL</option>
+                <option>View All Delivered</option>
+                <option>View All In-Transmit</option>
+              </select>
+            </div>
+          </div>
+          <br>
+<br>
+
+<div class="row">
+
+  <div class="col-lg-12 col-xl-12 mg-t-12">
+    <div class="card mg-b-10" style="padding-left: 5px;padding-right: 5px;">
+      <div class="card-header pd-t-20 d-sm-flex align-items-start justify-content-between bd-b-0 pd-b-0" style="padding-left: 5px;padding-right: 5px;">
+        <div>
+          <h5 class="mg-b-5">Inter Post Office Delivery Log</h5>
+          <p class="tx-13 tx-color-03 mg-b-0">Inter Post Office Delivery Log of 2020/04/15</p>
+        </div>
+        <div class="d-flex mg-t-20 mg-sm-t-0">
+
+          <div class="d-none d-md-block" style="padding-left: 5px;padding-right: 5px; ">
+
+            <button class="btn btn-sm pd-x-15 btn-white btn-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="feather feather-mail wd-10 mg-r-5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg> Email</button>
+            <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="feather feather-printer wd-10 mg-r-5">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg> Print</button>
+            <button class="btn btn-sm pd-x-15 btn-white btn-uppercase mg-l-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="feather feather-file wd-10 mg-r-5">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+              </svg> Generate Report</button>
+            <button class="btn btn-sm pd-x-15 btn-primary btn-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="feather feather-save wd-10 mg-r-5">
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                <polyline points="7 3 7 8 15 8"></polyline>
+              </svg> Save</button></div>
+        </div>
+      </div>
+
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-header d-flex align-items-center justify-content-between">
+            <h6 class="mg-b-0">Customize Reports</h6>
+            <ul class="list-inline d-flex mg-b-0">
+              <li class="list-inline-item d-flex align-items-center">
+                <input type="checkbox" value="" class="tx-12" style=""> Patient Details
+                <!-- <span class="d-block wd-10 ht-10 bg-df-2 rounded mg-r-5"><input type="checkbox" value=""></span> -->
+                <!-- <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Today</span> -->
+              </li>
+              <li class="list-inline-item d-flex align-items-center mg-l-10">
+                <input type="checkbox" value="" class="tx-12" style=""> Supplier
+              </li>
+              <li class="list-inline-item d-flex align-items-center">
+                <input type="checkbox" value="" class="tx-12" style=""> Remarks by Supplier
+              </li>
+              <li class="list-inline-item d-flex align-items-center mg-l-10">
+                <input type="checkbox" value="" class="tx-12" style=""> Remarks by Post Office
+              </li>
+              <li class="list-inline-item d-flex align-items-center">
+                <input type="checkbox" value="" class="tx-12" style=""> Received Date
+                <!-- <span class="d-block wd-10 ht-10 bg-df-2 rounded mg-r-5"></span> -->
+                <!-- <span class="tx-sans tx-uppercase tx-10 tx-medium tx-color-03">Today</span> -->
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+
+
+      <div class="card-body pd-y-30" style="padding-left: 5px;padding-right: 5px;">
+        <div class="d-sm-flex">
+          <div class="media col">
+            <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-teal tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="media-body">
+              <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold tx-nowrap mg-b-5 mg-md-b-8">Total Shipments</h6>
+              <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">150</h4>
+            </div>
+          </div>
+          <div class="media col">
+            <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-pink tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="media-body">
+              <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Total Delivered Shipments</h6>
+              <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">120 / <small>150</small> </h4>
+            </div>
+          </div>
+          <div class="media col">
+            <div class="wd-40 wd-md-50 ht-40 ht-md-50 bg-primary tx-white mg-r-10 mg-md-r-10 d-flex align-items-center justify-content-center rounded op-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="media-body">
+              <h6 class="tx-sans tx-uppercase tx-10 tx-spacing-1 tx-color-03 tx-semibold mg-b-5 mg-md-b-8">Total In-Transmit Shipments</h6>
+              <h4 class="tx-20 tx-sm-18 tx-md-20 tx-normal tx-rubik mg-b-0">30 / <small>150</small> </h4>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- card-body -->
+      <div class="table-responsive">
+        <table class="table table-dashboard mg-b-0">
+          <thead>
+            <tr>
+              <th>Track ID</th>
+              <th class="text-center">Change in Teack ID</th>
+              <th class="text-center">Recepient PO</th>
+              <th class="text-center">Patient Name</th>
+              <th class="text-center">Amount</th>
+              <th class="text-center">Delivery Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tx-color-03 tx-normal tx-indigo">GL-000008</td>
+              <td class="tx-medium text-center tx-indigo"></td>
+              <td class="tx-medium text-left tx-indigo">Galle PO</td>
+              <td class="text-left tx-indigo">Buddima Dahanayake</td>
+              <td class="text-center tx-indigo">200</td>
+              <td class="text-center tx-success">Delivered </td>
+            </tr>
+            <tr>
+              <td class="tx-color-03 tx-normal tx-indigo">BD-000009</td>
+              <td class="tx-medium text-center tx-indigo">BD-000009-BD</td>
+              <td class="tx-medium text-left tx-indigo">Baddegama PO</td>
+              <td class="text-left tx-indigo">Dulan Wirajith</td>
+              <td class="text-center tx-indigo">500</td>
+              <td class="text-center tx-danger">In-Transmit </td>
+            </tr>
+            <tr>
+              <td class="tx-color-03 tx-normal tx-indigo">UN-000011</td>
+              <td class="tx-medium text-center tx-indigo"></td>
+              <td class="tx-medium text-left tx-indigo">Unawatuna PO</td>
+              <td class="text-left tx-indigo">Dinuka Wickramasinghe</td>
+              <td class="text-center tx-indigo">600</td>
+              <td class="text-center tx-success">Delivered </td>
+            </tr>
+            <tr>
+              <td class="tx-color-03 tx-normal tx-indigo">GL-000018</td>
+              <td class="tx-medium text-center tx-indigo"></td>
+              <td class="tx-medium text-left tx-indigo">Galle PO</td>
+              <td class="text-left tx-indigo">Isuru Udesh</td>
+              <td class="text-center tx-indigo">1300</td>
+              <td class="text-center tx-danger">In-Transmit </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div><!-- table-responsive -->
+
+
+
+    </div><!-- card -->
+
+
+  </div>
+</div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
